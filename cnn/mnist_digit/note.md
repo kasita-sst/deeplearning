@@ -34,7 +34,7 @@ in our CNN model, we'll divide the architecture in 2 separate module instead, fo
    - And then, we stack the layers with linear layer, activation function ReLU to introduce non-linearity, and then stack the last layer with another linear layer which output is 10 (# 0-9)
   
 ### CNN Training 🏃‍♀️
-CNN Training happened in very similar way as MLP. 
+CNN Training happened in very similar way as MLP. <br>
 *Step*
 1. Forward Pass
 2. Calculate Loss
