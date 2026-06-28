@@ -18,11 +18,17 @@ in our CNN model, we'll divide the architecture in 2 separate module instead, fo
    - Convolution is simply a filter that detect each pattern that get slide through the input (so that the filter can find the pattern they're looking for !) 
    > **What is the pattern each filter looking for? How do we know?** <br>This is the value that deep learning will learn for us through training data and *backpropagation* 
 
-   **Let come back to the process of convolution operation!**
-   
+   **Let come back to the process of convolution operation!** <br>
+   👉1.1 Filter<br>
+   *A tiny patch per our config, we can set its width and height and its stride*
+   <p align="left"><img src="./assets/cnn-1.jpeg" width="400" alt="How CNN work"></p><br>
+   👉1.2 Activation Function<br>
+   Activation Function still used here <br>
+   👉1.3 Pooling Layer <br>
+   Pooling Layer help to reduce the data size <br>
+   - The popular pooling layer is "Max Pooling", the idea is just we get the largest value out!, so we can focus on what is important
    
 
-
-3. **The Classification Module**
+2. **The Classification Module**
    - First, we flatten the tensor that output from the previous module, in order to do classification.
    - And then, we stack the layers with linear layer, activation function ReLU to introduce non-linearity, and then stack the last layer with another linear layer which output is 10 (# 0-9)
